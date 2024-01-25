@@ -1,1 +1,9 @@
+// HELLO WORLD PROGRAM WITH COMMENT
 
+
+fn main() {
+    println!("Hello, world!");
+}
+
+
+//END PROGRAM
