@@ -1,0 +1,48 @@
+use std::io;
+// ALLOWS FOR STRING VARIABLES
+ 
+ 
+fn main() {
+ 
+    // OPENING
+    println!("\nBEGIN PROGRAM.\n");
+    
+    // THIS SHOULD BE OBVIOUS
+    println!("\nThe guardian challenges you with three questions.\n");
+    
+    
+    // COLLECT INFO 1
+    println!("\nWHAT IS YOUR NAME?");
+    println!("(The brave knight should answer and hit return, please.)\n");
+    let mut name_g = String::new();
+    io::stdin()
+        .read_line(&mut name_g)
+        .expect("\nERROR: FAILED TO READ LINE\n");
+    
+    // COLLECT INFO 2
+    println!("\nWHAT IS YOUR QUEST?");
+    println!("(The brave knight should answer and hit return, please.)\n");
+    let mut quest_g = String::new();
+    io::stdin()
+        .read_line(&mut quest_g)
+        .expect("\nERROR: FAILED TO READ LINE\n");
+    
+    // COLLECT INFO 3
+    println!("\nWHAT IS YOUR FAVORITE COLOR?");
+    println!("(The brave knight should answer and hit return, please.)\n");
+    let mut color_g = String::new();
+    io::stdin()
+        .read_line(&mut color_g)
+        .expect("\nERROR: FAILED TO READ LINE\n");
+    
+    //ANSWERS
+    println!("\nYOU HAVE ANSWERED:");
+    println!("\n\tNAME: {}", name_g);
+    println!("\tQUEST: {}", quest_g);
+    println!("\tCOLOR: {}\n", color_g);
+    
+    
+    //CLOSING
+    println!("YOU HAVE CHOSEN WISELY, BRAVE KNIGHT.");
+    println!("Please turn left at the deadly rabbit and right at the giant horned monster.\n");
+}
