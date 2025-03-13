@@ -1,0 +1,62 @@
+fn main() {
+    // Integer types
+    let int_8: i8 = -128;
+    let int_16: i16 = -32768;
+    let int_32: i32 = -2147483648;
+    let int_64: i64 = -9223372036854775808;
+    let int_128: i128 = -170141183460469231731687303715884105728;
+    let uint_8: u8 = 255;
+    let uint_16: u16 = 65535;
+    let uint_32: u32 = 4294967295;
+    let uint_64: u64 = 18446744073709551615;
+    let uint_128: u128 = 340282366920938463463374607431768211455;
+    
+    // Floating-point types
+    let float_32: f32 = 3.141592;
+    let float_64: f64 = 3.141592653589793;
+    
+    // Boolean type
+    let boolean: bool = true;
+    
+    // Character type
+    let character: char = 'A';
+    
+    // String types
+    let string_literal: &str = "Hello, Rust!";
+    let string_object: String = String::from("Owned String");
+    
+    // Array type
+    let array: [i32; 3] = [1, 2, 3];
+    
+    // Tuple type
+    let tuple: (i32, f64, char) = (42, 6.28, 'Z');
+    
+    // Vector type
+    let vector: Vec<i32> = vec![10, 20, 30];
+    
+    // Slice type
+    let slice: &[i32] = &array[1..];
+    
+    // Option type
+    let some_option: Option<i32> = Some(100);
+    let none_option: Option<i32> = None;
+    
+    // Result type
+    let ok_result: Result<i32, &str> = Ok(200);
+    let err_result: Result<i32, &str> = Err("An error occurred");
+    
+    // Printing all values
+    println!("Integers: {}, {}, {}, {}, {}, {}, {}, {}, {}, {}", 
+        int_8, int_16, int_32, int_64, int_128, uint_8, uint_16, uint_32, uint_64, uint_128);
+    println!("Floating points: {}, {}", float_32, float_64);
+    println!("Boolean: {}", boolean);
+    println!("Character: {}", character);
+    println!("String Literal: {}", string_literal);
+    println!("String Object: {}", string_object);
+    println!("Array: {:?}", array);
+    println!("Tuple: {:?}", tuple);
+    println!("Vector: {:?}", vector);
+    println!("Slice: {:?}", slice);
+    println!("Option Some: {:?}, Option None: {:?}", some_option, none_option);
+    println!("Result Ok: {:?}, Result Err: {:?}", ok_result, err_result);
+}
